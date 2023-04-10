@@ -1,3 +1,4 @@
+using ParseTXT;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,10 @@ public class Game : MonoBehaviour
     [SerializeField]
     private GameObject CellPrefab;
     public GameObject[] map;
+
+
+
+
     public void Generate(int X)
     {
         map = new GameObject[X];
@@ -69,6 +74,7 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
+        Program.Main();
         Generate(36);
         for(int i = 0; i < Players.Length; i++)
         {

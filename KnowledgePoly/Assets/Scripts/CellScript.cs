@@ -6,31 +6,32 @@ using UnityEngine.UI;
 
 public class CellScript : MonoBehaviour
 {
-    public string quest = "";
-    public string[] answers;
+    string quest = "";
+    string[] answers;
     public GameObject nextCell;
     [SerializeField]
-    private Text text;
+    Text text;
     [SerializeField]
-    private SpriteRenderer sprite;
+    SpriteRenderer sprite;
     public int theme = 0;
     // Start is called before the first frame update
 
     private void Start()
     {
+        
         switch (theme)
         {
             case 0:
-                sprite.color = Color.gray;
+                sprite.color = new Color32(254,214,188,255);
                 break;
             case 1:
-                sprite.color = Color.magenta;
+                sprite.color = new Color32(255, 155, 170, 255);
                 break;
             case 2:
-                sprite.color = Color.cyan;
+                sprite.color = new Color32(127, 181, 181, 255);
                 break;
             case 3:
-                sprite.color = Color.blue;
+                sprite.color = new Color32(172, 225, 175, 255);
                 break;
             default:
                 break;
