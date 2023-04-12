@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace ParseTXT
 {
     public static class Program
@@ -25,7 +24,8 @@ namespace ParseTXT
         static void ParseFirst()
         {
             List<Question> Firstlist = new List<Question>();
-            StreamReader f = new StreamReader("first.txt");
+            string t = null;
+            StreamReader f = new StreamReader("Assets/Resources/first.txt");
             int k = 0;
             string text = "";
             int price = 0;
@@ -94,7 +94,7 @@ namespace ParseTXT
         static void ParseSecond()
         {
             List<Question> Firstlist = new List<Question>();
-            StreamReader f = new StreamReader("second.txt");
+            StreamReader f = new StreamReader("Assets/Resources/second.txt");
             int k = 0;
             string text = "";
             int price = 0;
@@ -163,7 +163,7 @@ namespace ParseTXT
         static void ParseThird()
         {
             List<Question> Firstlist = new List<Question>();
-            StreamReader f = new StreamReader("third.txt");
+            StreamReader f = new StreamReader("Assets/Resources/third.txt");
             int k = 0;
             string text = "";
             int price = 0;
@@ -232,7 +232,7 @@ namespace ParseTXT
         static void ParseFourth()
         {
             List<Question> Firstlist = new List<Question>();
-            StreamReader f = new StreamReader("fourth.txt");
+            StreamReader f = new StreamReader("Assets/Resources/fourth.txt");
             int k = 0;
             string text = "";
             int price = 0;
